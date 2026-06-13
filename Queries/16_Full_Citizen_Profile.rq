@@ -1,0 +1,4 @@
+PREFIX moi: <http://www.sudan-government.com/ontologies/mistryofinteriorontology.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?citizen ?nn ?passport ?card ?license WHERE { OPTIONAL{?citizen moi:hasNationalNumber ?nn} OPTIONAL{?citizen moi:hasPassport ?passport} OPTIONAL{?citizen moi:hasNationalCard ?card} OPTIONAL{?citizen moi:hasDrivingLicense ?license}}

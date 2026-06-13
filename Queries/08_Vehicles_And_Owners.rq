@@ -1,0 +1,4 @@
+PREFIX moi: <http://www.sudan-government.com/ontologies/mistryofinteriorontology.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?vehicle ?owner WHERE { ?vehicle moi:OwnedBy ?owner . }
